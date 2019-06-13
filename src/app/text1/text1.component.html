@@ -1,0 +1,4 @@
+<br><p>Text1 :</p>{{ i }}
+
+<button *ngIf="isCollapsed" (click)="toggleCollapsed($event)" (click)="i= i+1">Add to Favourite</button>
+<button *ngIf="!isCollapsed"  (click)="toggleCollapsed($event)" (click)="i= i-1">Delete out Favourite</button>

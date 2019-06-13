@@ -1,0 +1,4 @@
+<br><p>Hero-list :</p>{{ i }}
+
+<button *ngIf="isCollapsed" (click)="toggleCollapsed()" (click)="i= i+1">Add to Favourite</button>
+<button *ngIf="!isCollapsed"  (click)="toggleCollapsed()" (click)="i= i-1">Delete out Favourite</button>
