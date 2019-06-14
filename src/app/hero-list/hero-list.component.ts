@@ -1,34 +1,38 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ShareDataService } from '../share-data.service';
+
 
 @Component({
   selector: 'app-hero-list',
   templateUrl: './hero-list.component.html',
   styleUrls: ['./hero-list.component.css']
+
 })
 export class HeroListComponent implements OnInit {
+
+  @Input() i_send;
 
   isCollapsed:boolean=true;
 
   i=0;
 
-  num = this.sharedata.num_i;
+  // num :number = this.showValues();
   
-  constructor(public sharedata:ShareDataService) { }
+  constructor() { }
 
   
 
   toggleCollapsed(){
     this.isCollapsed = !this.isCollapsed;
   }
-  addnum(){
-    this.sharedata.num_i = num + 1;
-  }
+  // addnum(){
+  //   this.sharedata.addnum_i();
+  // }
 
-  showValues(){
-    return this.sharedata.num_i;
+  // showValues(){
+  //   return this.sharedata.num_i;
     
-  }
+  // }
 
   ngOnInit() {
   }

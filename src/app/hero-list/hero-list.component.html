@@ -1,6 +1,10 @@
-<br><p>Hero-list :</p>{{ i }}
-<button *ngIf="isCollapsed" (click)="toggleCollapsed()" (click)="i = i+1">Add to Favourite</button>
-<button *ngIf="!isCollapsed"  (click)="toggleCollapsed()" (click)="i= i-1">Delete out Favourite</button>
+
+
+
+
+<br><p>Hero-list :</p>{{ i_send }}<br>
+<button *ngIf="isCollapsed" (click)="toggleCollapsed()"   (click)="i_send = i_send+1">Add to Favourite</button>
+<button *ngIf="!isCollapsed"  (click)="toggleCollapsed()" (click)="i_send= i_send-1">Delete out Favourite</button>
 
 
 

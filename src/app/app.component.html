@@ -1,6 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
-
 <ul>
   <li><a [routerLink] ="[ '' ]">Home</a></li>
   <li><a [routerLink] ="[ '/hero-list' ]">Hero list</a></li>
@@ -11,10 +10,13 @@
 
 
 
-{{ num }}
+{{ i_send }}
+<app-hero-list *ngFor="let item of list"></app-hero-list>
 
-<app-hero-list></app-hero-list>
+
+<!-- 
+<app-hero-list [i_send]="i_send"></app-hero-list>
 <app-text1></app-text1>
 <app-text2></app-text2>
-<app-text3></app-text3>
-<router-outlet></router-outlet>
+<app-text3></app-text3>-->
+<router-outlet></router-outlet> 

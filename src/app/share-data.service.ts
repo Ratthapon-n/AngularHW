@@ -12,8 +12,9 @@ export class ShareDataService {
   num_i:number = 0;
   constructor() { }
 
-  get_num_i():number{
-    return this.num_i;
+  
+  addnum_i(){
+    this.num_i = this.num_i+1;
   }
 
 }

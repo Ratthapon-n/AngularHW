@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { ShareDataService } from './share-data.service';
-import { InumModel } from './num-model';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +9,10 @@ import { InumModel } from './num-model';
 
 export class AppComponent {
   title = 'hw2';
-  i = 0;
+  i_send:number = 0;
+  array = ['Name',true]
+  
+  
   num  = this.showValues();
 
   constructor(public sharedata:ShareDataService){
