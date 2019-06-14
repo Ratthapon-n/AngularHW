@@ -11,10 +11,17 @@ import { InumModel } from './num-model';
 export class AppComponent {
   title = 'hw2';
   i = 0;
-  constructor(){
+  num  = this.showValues();
 
-
+  constructor(public sharedata:ShareDataService){
   }
+
+  showValues(){
+    return this.sharedata.num_i;
+  }
+  
+
+  
 
 
 }

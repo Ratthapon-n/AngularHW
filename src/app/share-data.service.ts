@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Inum } from './num';
 
 
 
@@ -11,13 +10,10 @@ import { Inum } from './num';
 export class ShareDataService {
 
   num_i:number = 0;
-  constructor(private http:HttpClient) { }
+  constructor() { }
 
-  get_num_i(){
+  get_num_i():number{
     return this.num_i;
   }
-  
-  getId(){
-    return [{"id":0}];
-  }
+
 }
